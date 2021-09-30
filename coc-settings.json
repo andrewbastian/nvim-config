@@ -1,0 +1,6 @@
+{
+"explorer.icon.source": "nvim-web-devicons",
+"coc.preferences.useQuickfixForLocations": true,
+"coc.preferences.extensionUpdateCheck": "weekly",
+"git.enableGutters": true
+}
