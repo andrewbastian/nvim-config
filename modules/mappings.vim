@@ -12,7 +12,7 @@ let g:ctrlp_use_caching = 0
  
 " esc in insert mode
 inoremap kj <esc>
-nnoremap <leader>P :Prettier<CR>
+nnoremap <leader>P :Format<CR>
 nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>bs /<C-R>=escape(expand("<cWORD>"), "/")<CR><CR>
 nnoremap <leader>u :UndotreeShow<CR>
