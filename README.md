@@ -1,6 +1,7 @@
 <h1 style ='color: green; background: linear-gradient(to left, #111A1F 10%, #037500 80%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block;'>
 Neovim Journy
 </h1>
+
 ---
 
 This is a modular Neovim configuration.
@@ -56,8 +57,6 @@ This is a modular Neovim configuration.
 | `nnoremap <Leader>+`     | :vertical resize +5<CR>                       |       |
 | `nnoremap <Leader>-`     | :vertical resize -5<CR>                       |       |
 | `nnoremap <Leader>rp`    | :resize 100<CR>                               |       |
-| `nnoremap <Leader>ee`    | **REMOVE**                                    |       |
-| `nnoremap <Leader>cpu`   | **REMOVE**                                    |       |
 | `vnoremap J`             | :m '>+1<CR>gv=gv                              |       |
 | `vnoremap K`             | :m '<-2<CR>gv=gv **CONFLICT**                 |       |
 | `vnoremap <leader>p`     | "\_dP                                         |       |
@@ -128,9 +127,17 @@ This is a modular Neovim configuration.
 ## Learn more about:
 
 - Registers
+    
+    - [Try this plugin](https://github.com/gennaro-tedesco/nvim-peekup)
 
-- Macros
+        - [Reddit post where I found plugin](https://www.reddit.com/r/neovim/comments/lh3aqm/vim_registers_made_fun_and_easy/)
 
--Markers
+- Macros/Recording
 
--Logs
+    - [Blog Post](https://mkaz.blog/working-with-vim/recording/)
+
+- Markers
+
+    - [Blog Post](https://mkaz.blog/working-with-vim/nav-marks/)
+
+- Logs
