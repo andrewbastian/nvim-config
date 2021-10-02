@@ -1,3 +1,4 @@
+.vscode/
 oldConfigs/
 plugged/
 autoload/plug.vim
