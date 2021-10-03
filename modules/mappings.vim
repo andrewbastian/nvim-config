@@ -12,7 +12,7 @@ let g:ctrlp_use_caching = 0
  
 " esc in insert mode
 inoremap kj <esc>
-nnoremap <leader>P :Format<CR>
+nnoremap <leader>f :Format<CR>
 nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>bs /<C-R>=escape(expand("<cWORD>"), "/")<CR><CR>
 nnoremap <leader>u :UndotreeShow<CR>
@@ -31,7 +31,6 @@ nnoremap <Leader>, :Buffers<CR> " browse buffers
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-" greatest remap ever
 vnoremap <leader>p "_dP
 
 " Yank to clipboard
