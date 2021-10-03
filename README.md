@@ -8,39 +8,62 @@ This is a modular Neovim configuration.
 
 ---
 
+## Quick Start
+
+1. [Install Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+2. Clone this repo into `~/.config`
+3. Move the files in this directory to `nvim` — `mv ~/.config/nvim-config/* ~/.config/nvim/`
+4. [Install _Vim-Plugged_](https://github.com/junegunn/vim-plug#neovim)
+5. Open Neovim - `nvim`
+6. Run `:so ~/.config/nvim/init.vim`
+7. Run `:PlugInstall`
+8. Run `:CocInstall `
+
 ## About the file structure:
 
-> `./init.vim`
->
-> > ThisIsAFile
+<details> 
+  <summary> <code>./init.vim</code> </summary>
+<p>
+ThisIsAFile
+</p>
 
-> `./plugins.vim`
->
-> > ThisIsAFile
+</details>
 
-> `./coc-settings.json`
->
-> > ThisIsAFile
+<details> 
+  <summary> <code>./plugins.vim</code> </summary>
 
-> `./modules/`
->
-> > ThisIsANotFile
+</details>
 
-> `./modules/core.vim`
->
-> > ThisIsAFile
+<details>
+  <summary> <code>./coc-settings.json</code> </summary>
 
-> `./modules/mappings.vim`
->
-> > ThisIsAFile
+</details>
 
-> `./modules/plugins.vim`
->
-> > ThisIsAFile
+<details >
+  <summary> <code>./modules/</code> </summary>
 
-> `./modules/plugins/`
->
-> > ThisIsNotAFile
+</details>
+
+<details>
+  <summary> <code>./modules/core.vim</code> </summary>
+
+</details>
+
+<details>
+  <summary> <code>./modules/mappings.vim</code> </summary>
+
+</details>
+
+
+<details>
+  <summary> <code>./modules/plugins.vim</code> </summary>
+
+</details>
+
+<details>
+  <summary> <code>./modules/plugins/</code> </summary>
+
+</details>
 
 ### KEY MAP
 
@@ -68,47 +91,47 @@ This is a modular Neovim configuration.
 
 ## Plugins and Extensions
 
-| Plugin                                                                                 | Notes                                                    | Keys & Commands                                                                                         |
-| -------------------------------------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | 
-| [ ulwlu/elly.vim ](https://github.com/ulwlu/elly.vim#readme)                           |                                                          |                                                                                                         |
-| [ neoclide/coc.nvim ](https://github.com/neoclide/coc.nvim#readme)                     |                                                          | `<C-f>` & `<C-b>` - _popup scroll_                                                                      |
-| [ mbbill/undotree ](https://github.com/mbbill/undotree#readme)                         |                                                          | `nnoremap <leader>u` = `:UndotreeShow`                                                                  |
-| [ alvan/vim-closetag ](https://github.com/alvan/vim-closetag#readme)                   |                                                          |                                                                                                         |
-| [ jiangmiao/auto-pairs ](https://github.com/jiangmiao/auto-pairs#readme)               | **KeymapsBroken** can't use `Opt` on imap                |                                                                                                         |
-| [ tpope/vim-surround ](https://github.com/tpope/vim-surround#readme)                   | **Ex:** `cs{"`, `ds(`, `ys2_[`                           | `cs[from][to]`, `ds[marker]`, `ys[movment][marker]`                                                     |
-| [ yuezk/vim-js ](https://github.com/yuezk/vim-js#readme)                               |                                                          |                                                                                                         |
-| [ tpope/vim-repeat ](https://github.com/tpope/vim-repeat)                              | Makes `.` command work with _Surround_                   |                                                                                                         |
-| [ maxmellon/vim-jsx-pretty ](https://github.com/MaxMEllon/vim-jsx-pretty#readme)       |                                                          |                                                                                                         |
-| [ leafgarland/typescript-vim ](https://github.com/leafgarland/typescript-vim#readme)   |                                                          |                                                                                                         |
-| [ itchyny/lightline.vim ](https://github.com/itchyny/lightline.vim#readme)             |                                                          |                                                                                                         |
-| [ SirVer/ultisnips ](https://github.com/SirVer/ultisnips#readme)                       |                                                          |                                                                                                         |
-| [ honza/vim-snippets ](https://github.com/honza/vim-snippets#readme)                   |                                                          |                                                                                                         |
-| [ mlaursen/vim-react-snippets ](https://github.com/mlaursen/vim-react-snippets#readme) |                                                          | `rce` - _Class Component Export_ `fce` - _Function Component Export_ `/**` - _jsdoc comment_            |
-| [ jremmen/vim-ripgrep ](https://github.com/jremmen/vim-ripgrep#readme)                 | `Root` defults to `current file's git-root`              | `:rg <string                                                                                            | 
+| Plugin                                                                                 | Notes                                                   | Keys & Commands                                                                                         |
+| -------------------------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| [ ulwlu/elly.vim ](https://github.com/ulwlu/elly.vim#readme)                           |                                                         |                                                                                                         |
+| [ neoclide/coc.nvim ](https://github.com/neoclide/coc.nvim#readme)                     |                                                         | `<C-f>` & `<C-b>` - _popup scroll_                                                                      |
+| [ mbbill/undotree ](https://github.com/mbbill/undotree#readme)                         |                                                         | `nnoremap <leader>u` = `:UndotreeShow`                                                                  |
+| [ alvan/vim-closetag ](https://github.com/alvan/vim-closetag#readme)                   |                                                         |                                                                                                         |
+| [ jiangmiao/auto-pairs ](https://github.com/jiangmiao/auto-pairs#readme)               | **KeymapsBroken** can't use `Opt` on imap               |                                                                                                         |
+| [ tpope/vim-surround ](https://github.com/tpope/vim-surround#readme)                   | **Ex:** `cs{"`, `ds(`, `ys2_[`                          | `cs[from][to]`, `ds[marker]`, `ys[movment][marker]`                                                     |
+| [ yuezk/vim-js ](https://github.com/yuezk/vim-js#readme)                               |                                                         |                                                                                                         |
+| [ tpope/vim-repeat ](https://github.com/tpope/vim-repeat)                              | Makes `.` command work with _Surround_                  |                                                                                                         |
+| [ maxmellon/vim-jsx-pretty ](https://github.com/MaxMEllon/vim-jsx-pretty#readme)       |                                                         |                                                                                                         |
+| [ leafgarland/typescript-vim ](https://github.com/leafgarland/typescript-vim#readme)   |                                                         |                                                                                                         |
+| [ itchyny/lightline.vim ](https://github.com/itchyny/lightline.vim#readme)             |                                                         |                                                                                                         |
+| [ SirVer/ultisnips ](https://github.com/SirVer/ultisnips#readme)                       |                                                         |                                                                                                         |
+| [ honza/vim-snippets ](https://github.com/honza/vim-snippets#readme)                   |                                                         |                                                                                                         |
+| [ mlaursen/vim-react-snippets ](https://github.com/mlaursen/vim-react-snippets#readme) |                                                         | `rce` - _Class Component Export_ `fce` - _Function Component Export_ `/**` - _jsdoc comment_            |
+| [ jremmen/vim-ripgrep ](https://github.com/jremmen/vim-ripgrep#readme)                 | `Root` defults to `current file's git-root`             | `:rg <string                                                                                            |
 | [junegunn/fzf.vim](https://github.com/junegunn/fzf/blob/master/README-VIM.md)          | `:FZF!` will start in fullscreen **Use `<esc>`to exit** | `:FZF` - _Look for files under current directory_ `:FZF ~` - _Look for files under your home directory_ |
-| [ junegunn/fzf.vim ](https://github.com/junegunn/fzf.vim#readme)                       |                                                          |                                                                                                         |
-| [ subnut/nvim-ghost.nvim ](https://github.com/subnut/nvim-ghost.nvim#readme)           |                                                          |                                                                                                         |
-| [ preservim/nerdcommenter ](https://github.com/preservim/nerdcommenter#readme)         |                                                          |                                                                                                         |
-| [ tpope/vim-fugitive ](https://github.com/tpope/vim-fugitivev#readme)                  |                                                          |                                                                                                         |
-| [ mattn/emmet-vim ](https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL) |                                                          |                                                                                                         |
-| [ vim-utils/vim-man ](https://github.com/vim-utils/vim-man)                            |                                                          |                                                                                                         |
-| [ liuchengxu/vim-which-key ]()                                                         |                                                          |                                                                                                         |
+| [ junegunn/fzf.vim ](https://github.com/junegunn/fzf.vim#readme)                       |                                                         |                                                                                                         |
+| [ subnut/nvim-ghost.nvim ](https://github.com/subnut/nvim-ghost.nvim#readme)           |                                                         |                                                                                                         |
+| [ preservim/nerdcommenter ](https://github.com/preservim/nerdcommenter#readme)         |                                                         |                                                                                                         |
+| [ tpope/vim-fugitive ](https://github.com/tpope/vim-fugitivev#readme)                  |                                                         |                                                                                                         |
+| [ mattn/emmet-vim ](https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL) |                                                         |                                                                                                         |
+| [ vim-utils/vim-man ](https://github.com/vim-utils/vim-man)                            |                                                         |                                                                                                         |
+| [ liuchengxu/vim-which-key ]()                                                         |                                                         |                                                                                                         |
 
-| EXTENTION                       | Notes | Keys & Commands |
-| ------------------------------- | ----- | --------------- |
-| [ webview ]()                   | Y     | N               |
-| [ snippets ]()                  | Y     | N               |
-| [ prettier ]()                  | Y     | N               |
-| [ html ]()                      | Y     | N               |
-| [ git ]()                       | Y     | N               |
-| [ explorer ]()                  | Y     | N               |
-| [ tsserver ]()                  | Y     | N               |
-| [ react-refactor ]()            | Y     | N               |
-| [ markdownlint ]()              | Y     | N               |
-| [ markdown-preview-enhanced ]() | Y     | N               |
-| [ css ]()                       | Y     | N               |
-| [ ltex ]()                      | Y     | N               |
-| [ json ]()                      | Y     | N               |
+| EXTENTION                                             | Notes              | Keys & Commands |
+| ----------------------------------------------------- | ------------------ | --------------- |
+| [ webview ](https://github.com/weirongxu/coc-webview) | Used by MD-preview | N               |
+| [ snippets ]()                                        | Y                  | N               |
+| [ prettier ]()                                        | Y                  | N               |
+| [ html ]()                                            | Y                  | N               |
+| [ git ]()                                             | Y                  | N               |
+| [ explorer ]()                                        | Y                  | N               |
+| [ tsserver ]()                                        | Y                  | N               |
+| [ react-refactor ]()                                  | Y                  | N               |
+| [ markdownlint ]()                                    | Y                  | N               |
+| [ markdown-preview-enhanced ]()                       | Y                  | N               |
+| [ css ]()                                             | Y                  | N               |
+| [ ltex ]()                                            | Y                  | N               |
+| [ json ]()                                            | Y                  | N               |
 
 ## Useful things I've learned along the way:
 
@@ -127,17 +150,17 @@ This is a modular Neovim configuration.
 ## Learn more about:
 
 - Registers
-    
-    - [Try this plugin](https://github.com/gennaro-tedesco/nvim-peekup)
 
-        - [Reddit post where I found plugin](https://www.reddit.com/r/neovim/comments/lh3aqm/vim_registers_made_fun_and_easy/)
+  - [Try this plugin](https://github.com/gennaro-tedesco/nvim-peekup)
+
+    - [Reddit post where I found plugin](https://www.reddit.com/r/neovim/comments/lh3aqm/vim_registers_made_fun_and_easy/)
 
 - Macros/Recording
 
-    - [Blog Post](https://mkaz.blog/working-with-vim/recording/)
+  - [Blog Post](https://mkaz.blog/working-with-vim/recording/)
 
 - Markers
 
-    - [Blog Post](https://mkaz.blog/working-with-vim/nav-marks/)
+  - [Blog Post](https://mkaz.blog/working-with-vim/nav-marks/)
 
 - Logs
