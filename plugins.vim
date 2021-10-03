@@ -2,7 +2,8 @@
 Plug 'ulwlu/elly.vim' " -- https://github.com/ulwlu/elly.vim#readme
 
 "COC
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " -- https://github.com/neoclide/coc.nvim#readme
+"Plug 'neoclide/coc.nvim', {'branch': 'release'} " -- https://github.com/neoclide/coc.nvim#readme
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'} " -- https://github.com/neoclide/coc.nvim#readme
 
 "Undotree
 Plug 'mbbill/undotree' " -- https://github.com/mbbill/undotree#readme
@@ -11,6 +12,7 @@ Plug 'mbbill/undotree' " -- https://github.com/mbbill/undotree#readme
 Plug 'alvan/vim-closetag' " -- https://github.com/alvan/vim-closetag#readme
 Plug 'jiangmiao/auto-pairs' " -- https://github.com/jiangmiao/auto-pairs#readme
 Plug 'tpope/vim-surround' " -- https://github.com/tpope/vim-surround#readme
+Plug 'tpope/vim-repeat' " -- https://github.com/tpope/vim-repeat
 "}}
 
 "Syntax highlighting
