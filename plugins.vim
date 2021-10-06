@@ -31,8 +31,8 @@ Plug 'mlaursen/vim-react-snippets' " -- https://github.com/mlaursen/vim-react-sn
 
 "{{Fuzzy & Grep
 Plug 'jremmen/vim-ripgrep' " -- https://github.com/jremmen/vim-ripgrep#readme
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " -- https://github.com/junegunn/fzf/blob/master/README-VIM.md
-Plug 'junegunn/fzf.vim' " -- https://github.com/junegunn/fzf.vim#readme
+Plug 'nvim-lua/plenary.nvim' " -- https://github.com/nvim-lua/plenary.nvim#readme
+Plug 'nvim-telescope/telescope.nvim' " -- https://github.com/nvim-telescope/telescope.nvim#readme
 "}}
 
 "GhostText
@@ -52,10 +52,4 @@ Plug 'vim-utils/vim-man' " -- https://github.com/vim-utils/vim-man
 
 "NEEDS CONFIG!!!!!
 Plug 'liuchengxu/vim-which-key'
-
-"{{ TMux - Vim integration
-"Plug 'christoomey/vim-tmux-navigator'
-"Plug 'tmux-plugins/vim-tmux-focus-events'
-"}}
-
 
