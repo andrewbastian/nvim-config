@@ -59,7 +59,8 @@ xmap <leader>f <Plug>(coc-format-selected)
 vmap <leader>f <Plug>(coc-format-selected)
 "
 nmap C-p <Plug>(coc-format-selected)
-
+" Should fix Formatting error in markdown files
+let g:coc_filetype_map = {'pandoc': 'markdown'}
 augroup mygroup
   autocmd!
   " Setup formatexpr specified filetype(s).
