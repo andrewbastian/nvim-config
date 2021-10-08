@@ -19,6 +19,8 @@ Plug 'tpope/vim-repeat' " -- https://github.com/tpope/vim-repeat
 Plug 'yuezk/vim-js' " -- https://github.com/yuezk/vim-js#readme
 Plug 'maxmellon/vim-jsx-pretty' " -- https://github.com/MaxMEllon/vim-jsx-pretty#readme
 Plug 'leafgarland/typescript-vim' " -- https://github.com/leafgarland/typescript-vim#readme
+Plug 'vim-pandoc/vim-pandoc-syntax' " -- https://github.com/vim-pandoc/vim-pandoc-syntax#readme
+Plug 'vim-pandoc/vim-pandoc' " -- https://github.com/vim-pandoc/vim-pandoc#readme
 
 "PowerLine
 Plug 'itchyny/lightline.vim' " -- https://github.com/itchyny/lightline.vim#readme
@@ -53,3 +55,5 @@ Plug 'vim-utils/vim-man' " -- https://github.com/vim-utils/vim-man
 "NEEDS CONFIG!!!!!
 Plug 'liuchengxu/vim-which-key'
 
+""MDX syntax
+"Plug 'andrewbastian/vim-mdx-js'
