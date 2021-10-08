@@ -19,7 +19,7 @@ Plug 'tpope/vim-repeat' " -- https://github.com/tpope/vim-repeat
 Plug 'yuezk/vim-js' " -- https://github.com/yuezk/vim-js#readme
 Plug 'maxmellon/vim-jsx-pretty' " -- https://github.com/MaxMEllon/vim-jsx-pretty#readme
 Plug 'leafgarland/typescript-vim' " -- https://github.com/leafgarland/typescript-vim#readme
-
+Plug 'andrewbastian/vim-mdx-js' " - https://github.com/andrewbastian/vim-mdx-js#readme
 "PowerLine
 Plug 'itchyny/lightline.vim' " -- https://github.com/itchyny/lightline.vim#readme
 
