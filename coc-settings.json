@@ -1,9 +1,11 @@
 {
-"explorer.icon.source": "nvim-web-devicons",
-"coc.preferences.useQuickfixForLocations": true,
-"coc.preferences.extensionUpdateCheck": "weekly",
-"webview.colorStrategy":"dark",
-"markdown-preview-enhanced.previewTheme": "github-dark.css",
-"markdown-preview-enhanced.useGitHubStylePipedLink": true,
-"git.enableGutters": true
+    "semanticTokens.enable":true,
+    "colors.enable": true,
+    "coc.preferences.formatOnType": true,
+    "coc.preferences.useQuickfixForLocations": true,
+    "coc.preferences.extensionUpdateCheck": "weekly",
+    "webview.colorStrategy": "dark",
+    "markdown-preview-enhanced.previewTheme": "github-dark.css",
+    "markdown-preview-enhanced.useGitHubStylePipedLink": true,
+    "git.enableGutters": true,
 }
