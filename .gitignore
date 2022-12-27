@@ -1,4 +1,6 @@
 .vscode/
 oldConfigs/
+lua-language-server/
+plugin/
 plugged/
 autoload/plug.vim
