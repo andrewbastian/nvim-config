@@ -1,46 +1,41 @@
-function map(mode, shortcut, command)
-    vim.api.nvim_set_keymap(mode, shortcut, command, { noremap = true, silent = true })
-end
-
-function nmap(shortcut, command)
-    map('n', shortcut, command)
-end
-
-function imap(shortcut, command)
-    map('i', shortcut, command)
-end
-
-function vmap(shortcut, command)
-    map('v', shortcut, command)
-end
-function xmap(shortcut, command)
-    map('x', shortcut, command)
-end
-
--- inspect something
--- Taken from https://github.com/jamestthompson3/vimConfig/blob/eeef4a8eeb5a24938f8a0969a35f69c78643fb66/lua/tt/nvim_utils.lua#L106
-function inspect(item)
-  print(vim.inspect(item))
-end
+-- Keymap functions
 
 local M = {}
 
-function M.executable(name)
-  if vim.fn.executable(name) > 0 then
-    return true
-  end
-
-  return false
+function M.map(mode, lhs, rhs)
+        vim.api.nvim_set_keymap(mode, lhs, rhs, {silent =  true})
 end
 
-function M.may_create_dir()
-  local fpath = vim.fn.expand('<afile>')
-  local parent_dir = vim.fn.fnamemodify(fpath, ":p:h")
-  local res = vim.fn.isdirectory(parent_dir)
-
-  if res == 0 then
-    vim.fn.mkdir(parent_dir, 'p')
-  end
+function M.noremap(mode, lhs, rhs)
+        vim.api.nvim_set_keymap(mode, lhs, rhs, {noremap = true, silent = true})
 end
+
+function M.exprnoremap(mode, lhs, rhs)
+        vim.api.nvim_set_keymap(mode, lhs, rhs, {noremap = true, silent = true, expr = true})
+end
+
+-- Useful mode-specific shortcuts
+-- nomenclature: "<expr?><mode><nore?>map(lhs, rhs)" where:
+--      "expr?" optional expr option
+--      "nore?" optional no-remap option
+--      modes -> 'n' = NORMAL, 'i' = INSERT, 'x' = 'VISUAL', 'v' = VISUAL + SELECT, 't' = TERMINAL
+
+function M.nmap(lhs, rhs) M.map('n', lhs, rhs) end
+
+function M.xmap(lhs, rhs) M.map('x', lhs, rhs) end
+
+function M.nnoremap(lhs, rhs) M.noremap('n', lhs, rhs) end
+
+function M.vnoremap(lhs, rhs) M.noremap('v', lhs, rhs) end
+
+function M.xnoremap(lhs, rhs) M.noremap('x', lhs, rhs) end
+
+function M.inoremap(lhs, rhs) M.noremap('i', lhs, rhs) end
+
+function M.tnoremap(lhs, rhs) M.noremap('t', lhs, rhs) end
+
+function M.exprnnoremap(lhs, rhs) M.exprnoremap('n', lhs, rhs) end
+
+function M.exprinoremap(lhs, rhs) M.exprnoremap('i', lhs, rhs) end
 
 return M

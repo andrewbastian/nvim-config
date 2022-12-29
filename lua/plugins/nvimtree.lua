@@ -1,20 +1,5 @@
-nnoremap <leader>e :NvimTreeToggle<CR>
-nnoremap <leader>r :NvimTreeRefresh<CR>
-" nnoremap <leader>n :NvimTreeFindFile<CR>
-" More available functions:
-" NvimTreeOpen
-" NvimTreeClose
-" NvimTreeFocus
-" NvimTreeFindFileToggle
-" NvimTreeResize
-" NvimTreeCollapse
-" NvimTreeCollapseKeepBuffers
+-- NVIM tree
 
-"set termguicolors " this variable must be enabled for colors to be applied properly
-
-" a list of groups can be found at `:help nvim_tree_highlight`
-"highlight NvimTreeFolderIcon guibg=#81a1c1 guifg=#232831
-lua << EOF
 require'nvim-tree'.setup( {
     renderer = {
             highlight_git = true,
@@ -56,6 +41,5 @@ require'nvim-tree'.setup( {
               },
           },
     respect_buf_cwd = true,
-    create_in_closed_folder = true,
       })
-EOF
+

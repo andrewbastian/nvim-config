@@ -1,5 +1,3 @@
-lua << EOF
-
 require('nightfox').setup({
   options = {
     -- Compiled file's destination location
@@ -35,5 +33,5 @@ require('nightfox').setup({
 })
 
 -- setup must be called before loading
-vim.cmd("colorscheme nordfox")
-EOF
+-- vim.cmd("colorscheme nordfox")
+

@@ -26,3 +26,4 @@ m.queries = {
         ]]
 }
 m.queries.typescript = m.queries.javascript
+

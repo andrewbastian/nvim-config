@@ -1,4 +1,3 @@
-lua << EOF
   local home = os.getenv('HOME')
   local db = require('dashboard')
 
@@ -39,4 +38,4 @@ lua << EOF
     db.custom_footer = {
             icon = '🤘',
           }
-EOF
+
