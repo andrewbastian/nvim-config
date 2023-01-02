@@ -1,4 +1,4 @@
-require('nvim-lsp-installer').setup{}
+require('nvim-lsp-installer').setup {}
 local nvim_lsp = require('lspconfig')
 local utils = require('lsp.utils')
 local common_on_attach = utils.common_on_attach
@@ -8,7 +8,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 -- Enable language servers with common settings
-local servers = {"bashls", 'sumneko_lua',  "clangd", "tsserver", "pyright", "jsonls", "dockerls"}
+local servers = { "bashls", 'marksman', 'sumneko_lua', "clangd", "tsserver", "pyright", "jsonls", "dockerls" }
 
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup({
@@ -20,4 +20,4 @@ end
 -- require('lsp.sumneko')
 
 -- signature help hover
-require "lsp_signature".setup({ })
+require "lsp_signature".setup({})

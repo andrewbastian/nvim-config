@@ -1,4 +1,4 @@
--- Plugin definition and loading
+--- Plugin definition and loading
 -- local execute = vim.api.nvim_command
 local fn = vim.fn
 local cmd = vim.cmd
@@ -27,7 +27,7 @@ return require('packer').startup(function(use)
   use({ 'wbthomason/packer.nvim', opt = true })
   -- Undotree
   use "jiaoshijie/undotree"
-  -- LSP server
+  -- LSP server  use 'williamboman/nvim-lsp-installer' -- Helper for installing most language servers
   use 'williamboman/nvim-lsp-installer' -- Helper for installing most language servers
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
@@ -73,6 +73,9 @@ return require('packer').startup(function(use)
   -- Snippets
   use { "L3MON4D3/LuaSnip", config = function() require('plugins.snippets') end }
   use "rafamadriz/friendly-snippets"
+  -- use {'dsznajder/vscode-es7-javascript-react-snippets',
+  -- run = 'yarn install --frozen-lockfile && yarn compile'
+  -- }
 
   -- Signature help
   use "ray-x/lsp_signature.nvim"
@@ -155,7 +158,10 @@ return require('packer').startup(function(use)
   -- Markdown
   use 'godlygeek/tabular'
   use 'ellisonleao/glow.nvim'
-
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
   -- TOML Files
   use 'cespare/vim-toml'
 

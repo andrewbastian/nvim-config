@@ -1,5 +1,6 @@
 -- Visual
 vim.o.conceallevel    = 0 -- Don't hide quotes in markdown
+vim.o.nowrap          = true
 vim.o.cmdheight       = 1
 vim.o.pumheight       = 10
 vim.o.showmode        = false

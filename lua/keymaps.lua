@@ -23,20 +23,20 @@ inoremap("kj", "<Esc>")
 inoremap("<C-SPACE>", "<C-x><C-o>")
 
 -- Relode init.lua
-nnoremap ( '<Leader>so<CR>', ":so ~/.config/nvim/init.lua<CR>" )
+nnoremap('<Leader>so<CR>', ":source ~/.config/nvim/init.lua<CR>")
 -- Format with prettier
-nnoremap ( "<Leader>P", ":Prettier" )
+nnoremap("<Leader>P", ":Prettier")
 -- Window Navigation
-nnoremap ( "<Leader><left>", "<C-w><left>" )
-nnoremap ( "<Leader><right>", "<C-w><right>" )
-nnoremap ( "<Leader><up>", "<C-w><up>" )
-nnoremap ( "<Leader><down>", "<C-w><down>" )
+nnoremap("<Leader><left>", "<C-w><left>")
+nnoremap("<Leader><right>", "<C-w><right>")
+nnoremap("<Leader><up>", "<C-w><up>")
+nnoremap("<Leader><down>", "<C-w><down>")
 
 -- Buffer Navigation
-nnoremap ( "<Leader>3", ":b#<CR>" )      -- previous buffer
-nnoremap ( "<Leader>n", ":bn<CR>" )      -- next buffer
-nnoremap ( "Q", ":bd!<CR>" )             -- close buffer
-nnoremap ( '<Leader>,', ":buffers<CR>" ) -- browse buffers
+nnoremap("<Leader>3", ":b#<CR>") -- previous buffer
+nnoremap("<Leader>n", ":bn<CR>") -- next buffer
+nnoremap("Q", ":bd!<CR>") -- close buffer
+nnoremap('<Leader>,', ":buffers<CR>") -- browse buffers
 -- Close buffer
 nnoremap("<C-c>", ":q<CR>")
 
@@ -55,13 +55,13 @@ nnoremap("<leader>ws", ":split<CR>")
 nnoremap("<leader>vs", ":vsplit<CR>")
 
 -- Populate substitution
-nnoremap("<leader>s", ":s//g<Left><Left>")
-nnoremap("<leader>S", ":%s//g<Left><Left>")
+nnoremap("<leader>sub", ":s//g<Left><Left>")
+nnoremap("<leader>Sub", ":%s//g<Left><Left>")
 nnoremap("<leader><C-s>", ":%s//gc<Left><Left><Left>")
 
-vnoremap("<leader>s", ":s//g<Left><Left>")
+vnoremap("<leader>sub", ":s//g<Left><Left>")
 vnoremap("<leader><A-s>", ":%s//g<Left><Left>")
-vnoremap("<leader>S", ":%s//gc<Left><Left><Left>")
+vnoremap("<leader>Sub", ":%s//gc<Left><Left><Left>")
 
 -- Delete buffer
 nnoremap("<A-w>", ":bd<CR>")
@@ -72,6 +72,10 @@ nnoremap("Y", "y$")
 -- Copy to system clippboard
 nnoremap("<leader>y", '"+y')
 vnoremap("<leader>y", '"+y')
+nnoremap("<leader>Y", 'gg"+yG')
+
+nnoremap("<leader>d", '"_d')
+vnoremap("<leader>d", '"_d')
 
 -- Paste from system clippboard
 nnoremap("<leader><C-v>", '"+p')
@@ -111,12 +115,12 @@ nnoremap("<leader><A-d>", "<Cmd>lua vim.diagnostic.setqflist()<CR>")
 
 -- Telescope
 nnoremap("<leader>ff", "<Cmd>Telescope find_files<CR>")
-nnoremap("<leader>fhf","<Cmd>Telescope find_files hidden=true<CR>")
+nnoremap("<leader>fhf", "<Cmd>Telescope find_files hidden=true<CR>")
 nnoremap("<leader>fb", "<Cmd>Telescope buffers<CR>")
 nnoremap("<leader>fg", "<Cmd>Telescope live_grep<CR>")
 
 -- File explorer
-nnoremap("<leader>e", "<Cmd>NvimTreeToggle<CR>")  -- NvimTree
+nnoremap("<leader>e", "<Cmd>NvimTreeToggle<CR>") -- NvimTree
 -- nnoremap("<leader>e", "<Cmd>RnvimrToggle<CR>")
 
 -- EasyAlign
